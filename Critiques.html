@@ -1,0 +1,127 @@
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <style>
+          body {
+              background-color: black; /* Fond noir pour tout le corps */
+              color: white; /* Texte en blanc pour une meilleure lisibilité */
+          }
+   
+          /* Ajustement des marges entre la bannière et le menu */
+          #regular-header {
+              text-align: center; /* Centrer l'image de la bannière */
+          }
+
+          #logo {
+              margin-bottom: 0; /* Réduction de la marge inférieure */
+          }
+
+          nav {
+              margin-top: -15px; /* Ajuster la marge pour un bon espacement */
+              text-align: center; /* Centrer le menu de navigation */
+          }
+
+          /* Assurer l'alignement du texte dans le contenu */
+          hgroup {
+              text-align: center;
+          }
+
+          section {
+              margin-top: -60px; /* Espacement entre le menu et le texte */
+          }
+
+          footer {
+              text-align: center; /* Centrer le texte du pied de page */
+          }
+      </style>
+  </head>
+  <body>
+      <header id="site-header" role="banner">
+          <div id="regular-header">
+              <h1 id="logo" class="image-logo">
+                  <a href="index.html">
+                      <img src="https://i.postimg.cc/J04ff2HD/DALL-E-2024-04-20-19-20-49-A-panoramic-web-banner-for-a-manga-manwha-website-titled-Manga-Insight.png" alt="Manga insight" width="2000" height="250" />
+                  </a>
+              </h1>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="Critiques.html">Critiques</a></li>
+                  <li><a href="A propros.html">À propos</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main class="container">
+          <div class="grid">
+              <section>
+                  <hgroup>
+                      <h2>Critiques des mangas et des manhwas</h2>
+                     <style>
+                                
+                      .accordeon {
+                                cursor: pointer;
+                                background-color: #444; /* Gris foncé */
+                                padding: 10px;
+                                border: 1px solid #ccc;
+                                margin: 5px 0;
+                            }
+                       .accordeon:hover {
+                       background-color: #666; } /* Gris un peu plus foncé lors du survol */
+                         
+                            .content {
+                                display: none; /* Caché par défaut */
+                                padding: 10px;
+                                border: 1px solid #ccc;
+                                border-top: none; /* Pas de bordure supérieure pour éviter la duplication */
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        
+                            <!-- Mangas -->
+                            <div class="accordeon" onclick="toggleAccordion(this)">Mangas</div>
+                            <div class="content">
+                                <p><p> <a href="One Piece.html">One Piece</a>.</p></p>
+                            </div>
+
+                            <!-- Accordéon 2 -->
+                            <div class="accordeon" onclick="toggleAccordion(this)">Manhwas</div>
+                            <div class="content">
+                                <p> <a href="Solo Leving.html">Solo Leveling</a>.</p>
+
+                              <p> <a href="The Beginning After The End.html">The Beginning After The End</a>.</p>
+                             <p> <a href="The player who can't level up.html">The player who can't level up</a>.</p>
+
+                            </div>
+                       
+
+                        <script>
+                            function toggleAccordion(element) {
+                                var content = element.nextElementSibling; // Le contenu qui suit l'accordéon
+                                if (content.style.display === "none") {
+                                    content.style.display = "block"; // Afficher le contenu
+                                } else {
+                                    content.style.display = "none"; // Cacher le contenu
+                                }
+                            }
+                        </script>
+                    </body>
+                  <!-- Ajoutez d'autres contenus ici -->
+              </section>
+          </div>
+      </main>
+
+      <footer class="container">
+          <small>
+             <a href="xxxinsta" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+              <a href="xxxface" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+          </small>
+      </footer>
+  </body>
+  </html>
