@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add CDN links for Picocss, Font Awesome, and Firebase -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Firebase Configuration -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCfcP7PH0-rY23X98IKOJBbnGywGibaD7s",
+            authDomain: "manga-insight.firebaseapp.com",
+            projectId: "manga-insight",
+            storageBucket: "manga-insight.appspot.com",
+            messagingSenderId: "609301849221",
+            appId: "1:609301849221:web:bf9869edce0a6a85f4b5ec",
+            measurementId: "G-Z09L6X4Z0W"
+        };
+    </script>
+    <!-- Load Firebase SDK synchronously -->
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase.js"></script>
+</head>
+<body>
+    <!-- Page Content -->
+    <button onclick="signIn()">Se Connecter</button>
+    <button onclick="signOut()">Se Déconnecter</button>
+    <script>
+        function signIn() {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            firebase.auth().signInWithPopup(provider).then((result) => {
+                console.log("User signed in:", result.user);
+            }).catch((error) => {
+                console.error("Sign-in error:", error);
+            });
+        }
+        function signOut() {
+            firebase.auth().signOut().then(() => {
+                console.log("User signed out");
+            }).catch((error) => {
+                console.error("Sign-out error:", error);
+            });
+        }
+    </script>
+</body>
+</html>
