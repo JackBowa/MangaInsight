@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            background-color: black; /* Fond noir pour tout le corps */
-            color: white; /* Texte en blanc pour une meilleure lisibilité */
+      <style>
+        .banner {
+            background: url('votre-image-ici.jpg') no-repeat top center;
+            background-size: cover;
+            padding: 0;
+            margin: 0; /* Assurez-vous qu'il n'y ait pas de marge sur les éléments de la bannière */
         }
+      </style>
+      <style>
+          body {
+              background-color: black; /* Fond noir pour tout le corps */
+              color: white; /* Texte en blanc pour une meilleure lisibilité */
+           margin: 0; /* Pour supprimer l'espace en haut */}
 
         /* Ajustement des marges entre la bannière et le menu */
         #regular-header {
@@ -40,11 +48,11 @@
     </style>
 </head>
 <body>
-    <header id="site-header" role="banner">
-        <div id="regular-header">
-            <h1 id="logo" class="image-logo">
-                <a href="index.html">
-                   <img src="https://i.postimg.cc/dt1vhRGY/IMG-0126.jpg" alt="Manga insight" width="2000" height="250" />
+  <header class="banner" role="banner">
+     <a href="index.html">
+      <img src="https://i.postimg.cc/dt1vhRGY/IMG-0126.jpg" alt="Manga insight" width="2000" height="250" />
+  </header>
+
                 </a>
             </h1>
         </div>

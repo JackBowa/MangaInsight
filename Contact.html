@@ -6,59 +6,63 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
+        .banner {
+            background: url('https://i.postimg.cc/dt1vhRGY/IMG-0126.jpg') no-repeat top center;
+            background-size: cover;
+            height: 250px; /* Ajustez cette hauteur selon vos besoins */
+            padding: 0;
+            margin: 0; /* Éliminez les marges */
+        }
+
         body {
             background-color: black; /* Fond noir pour tout le corps */
-            color: white; /* Texte en blanc pour une meilleure lisibilité */
+            color: white; /* Texte en blanc */
+            margin: 0; /* Supprimer les marges autour du corps */
+            padding: 0; /* Supprimer le padding autour du corps */
         }
 
-        /* Ajustement des marges entre la bannière et le menu */
-        #regular-header {
-            text-align: center; /* Centrer l'image de la bannière */
+        nav {
+            text-align: center;
+            margin: -15px; /* Supprimer les marges indésirables */
+            padding: 0; /* Supprimer le padding indésirable */
         }
 
-        #logo {
-            margin-bottom: 0; /* Réduction de la marge inférieure */
-        }
-
-      nav {
-          margin-top: -15px; /* Ajuster la marge pour un bon espacement */
-          text-align: center; /* Centrer le menu de navigation */
-      }
-
-      /* Assurer l'alignement du texte dans le contenu */
-      hgroup {
+      footer {
           text-align: center;
+          margin: 0;
+          padding: 0; /* Éliminer tout espace indésirable */
+          background-color: black; /* Assurez-vous que le pied de page reste noir */
       }
-
-      section {
-          margin-top: -60px; /* Espacement entre le menu et le texte */}
-
-        footer {
-            text-align: center; /* Centrer le texte du pied de page */
-        }
     </style>
 </head>
 <body>
-    <header id="site-header" role="banner">
-        <div id="regular-header">
-            <h1 id="logo" class="image-logo">
-                <a href="index.html">
-                   <img src="https://i.postimg.cc/dt1vhRGY/IMG-0126.jpg" alt="Manga insight" width="2000" height="250" />
-                </a>
-            </h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Critiques.html">Critiques</a></li>
-                <li><a href="A propros.html">À propos</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="banner" role="banner">
+        <!-- Bannière sans espace noir en haut -->
     </header>
-    <title>Contact - Avis sur Mangas et Séries</title>
-  <p></p>
-  <p>Pour toutes questions ou suggestions, n'hésitez pas à nous contacter via nos réseaux sociaux.</p>
-<div class="social-media">
-  <a href="https://www.instagram.com/mangainsight_review/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-  <a href="https://www.facebook.com/profile.php?id=61558806596916" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Critiques.html">Critiques</a></li>
+            <li><a href="A propos.html">À propos</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Pour toutes questions ou suggestions, n'hésitez pas à nous contacter via nos réseaux sociaux.</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/mangainsight_review/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61558806596916" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Pied de page -->
+    </footer>
+</body>
+  <footer>
+      <p>© 2024 Manga Insight. Tous droits réservés.</p>
+  </footer>
+  
+</html>
